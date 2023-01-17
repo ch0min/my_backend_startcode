@@ -1,0 +1,58 @@
+### WELCOME MESSAGE CHECK TO SEE IF DATABASE IS SETUP
+GET http://localhost:8080/api/info
+
+
+##### ***USER ENDPOINTS*** #####
+
+### SYSTEM GREETS USER IF LOGGED IN
+#GET http://localhost:8080/api/info/user
+#x-access-token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiYWRtaW4iLCJleHAiOjE2NjcyOTYyMTAsImlhdCI6MTY2NzI5NDQxMCwiaXNzdWVyIjoic2VtZXN0ZXJzdGFydGNvZGUtZGF0MyIsInVzZXJuYW1lIjoiYWRtaW4ifQ.dlsMNiQc_OYU2HCa-WMzNImQ3qoNy2CGXEWAbXBQM3g"
+
+### GET ALL USERS
+GET http://localhost:8080/api/users/all
+Content-Type: application/json
+
+### GET USER BY USERNAME
+GET http://localhost:8080/api/users/mark
+Content-Type: application/json
+
+### CREATE USER
+POST http://localhost:8080/api/users/
+Content-Type: application/json
+
+{
+  "userName": "fido",
+  "userEmail": "fido@gmail.com",
+  "userPass": "test123"
+}
+
+### UPDATE USER
+PUT http://localhost:8080/api/users/mark
+Content-Type: application/json
+
+{
+  "userEmail": "nyemail@gmail.com"
+}
+
+### DELETE USER
+DELETE http://localhost:8080/api/users/mark
+Content-Type: application/json
+
+
+
+
+##### ***XXXX ENDPOINTS*** #####
+
+
+
+
+##### ***XXXX ENDPOINTS*** #####
+
+
+
+
+##### ***XXXX ENDPOINTS*** #####
+
+
+
+
